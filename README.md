@@ -117,3 +117,17 @@ CREATE TRIGGER order_delete AFTER DELETE ON order_details
 
 delimiter ;
 ```
+![scheme](images/authorization.PNG)
+![scheme](images/listOfdb.PNG)
+![scheme](images/tables.PNG)
+![scheme](images/insertCustomer.PNG)
+![scheme](images/newCustomer.PNG)
+![scheme](images/insertOrderInfo.PNG)
+![scheme](images/newOrderInfo.PNG)
+![scheme](images/tableProducts.PNG)
+![scheme](images/deleteProduct.PNG)
+![scheme](images/insertOrderDEtails.PNG)
+![scheme](images/tableOrderDetails.PNG)
+![scheme](images/tableOrderInfo.PNG)
+![scheme](images/uodateCustomer.PNG)
+![scheme](images/databases.PNG)
