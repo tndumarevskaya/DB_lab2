@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #DEB887; -fx-background-radius: 5; -fx-border-color: #8B4513;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller2Window">
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+    <cursor>
+        <Cursor fx:constant="DEFAULT" />
+    </cursor>
+   <children>
+      <AnchorPane layoutX="21.0" layoutY="93.0" prefHeight="287.0" prefWidth="558.0" style="-fx-background-color: #FFF8DC; -fx-background-radius: 5;">
+         <children>
+            <ListView fx:id="myListView" layoutX="-2.0" layoutY="-4.0" prefHeight="294.0" prefWidth="558.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="254.0" layoutY="14.0" prefHeight="22.0" prefWidth="93.0" text="DATABASES">
+         <font>
+            <Font name="Colonna MT" size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_create" layoutX="21.0" layoutY="48.0" mnemonicParsing="false" onAction="#createDB" text="Create" />
+      <Button fx:id="button_drop" layoutX="448.0" layoutY="48.0" mnemonicParsing="false" onAction="#deleteDB" text="Drop" />
+      <Button fx:id="button_use" layoutX="534.0" layoutY="48.0" mnemonicParsing="false" onAction="#useDB" text="Use" />
+      <TextField fx:id="dbName" layoutX="93.0" layoutY="48.0" promptText="name of new db" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #8B4513; -fx-background-radius: 5; -fx-border-color: #8B4513;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="203.0" layoutY="14.0" prefHeight="59.0" prefWidth="195.0" text="DATABASE" textFill="#1e392c">
+         <font>
+            <Font name="Colonna MT" size="40.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="89.0" prefHeight="310.0" prefWidth="600.0" style="-fx-background-color: #DEB887;">
+         <children>
+            <Button fx:id="button_connect" layoutX="256.0" layoutY="216.0" mnemonicParsing="false" onAction="#switchToScene1" prefHeight="42.0" prefWidth="94.0" style="-fx-background-color: #1e392c; -fx-border-radius: 5;" text="connect" textFill="BURLYWOOD">
+               <font>
+                  <Font name="Colonna MT" size="19.0" />
+               </font>
+            </Button>
+            <TextField fx:id="user" layoutX="136.0" layoutY="98.0" prefHeight="42.0" prefWidth="331.0" promptText="user" style="-fx-border-color: #1e392c; -fx-border-radius: 5;">
+               <font>
+                  <Font name="Colonna MT" size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="184.0" layoutY="26.0" prefHeight="59.0" prefWidth="236.0" text="Authorization" textFill="#1e392c">
+               <font>
+                  <Font name="Colonna MT" size="40.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="password" layoutX="137.0" layoutY="164.0" prefHeight="42.0" prefWidth="331.0" promptText="password" style="-fx-background-radius: 5; -fx-border-color: #1e392c;">
+               <font>
+                  <Font name="Colonna MT" size="18.0" />
+               </font>
+            </PasswordField>
+            <Label fx:id="invalid_label" layoutX="223.0" layoutY="275.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>
