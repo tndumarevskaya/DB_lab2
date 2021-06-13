@@ -117,17 +117,44 @@ CREATE TRIGGER order_delete AFTER DELETE ON order_details
 
 delimiter ;
 ```
+1. Авторизация пользователя:
 ![scheme](images/authorization.PNG)
+
+2. На экране показываются все базы данных:
 ![scheme](images/listOfdb.PNG)
+
+3. Для примера заходим в базу данных ASOS:
 ![scheme](images/tables.PNG)
+
+4. Пример добавления покупателя:
 ![scheme](images/insertCustomer.PNG)
+
+5. Результат добавления:                                     
 ![scheme](images/newCustomer.PNG)
+
+6. Добавляем информацию о заказе, справа от окошка можно выбрать ID существующего пользователя, в данном случае 1. Снизу можно выбрать способ оплаты:
 ![scheme](images/insertOrderInfo.PNG)
+
+7. Результат:                               
 ![scheme](images/newOrderInfo.PNG)
+
+8. Также добавляются две позиции:
 ![scheme](images/tableProducts.PNG)
+
+9. Также продукт может быть удален:
 ![scheme](images/deleteProduct.PNG)
+
+10. Добавляем номер заказа и продукта, он также выбирается из списка существующих продуктов:
 ![scheme](images/insertOrderDEtails.PNG)
+
+11. Результат:                   
 ![scheme](images/tableOrderDetails.PNG)
+
+12. В информации о заказе прайс также увеличивается с добавлением продукта в заказ, как видно на картинке: 
 ![scheme](images/tableOrderInfo.PNG)
+
+13. Каждое поле может быть изменено, как показано на картинке. Выбираем ID поля, колонку и вводим новое значение:
 ![scheme](images/uodateCustomer.PNG)
+
+14. Как выглядит база данных в консоле:
 ![scheme](images/databases.PNG)
