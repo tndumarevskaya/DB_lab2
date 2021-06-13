@@ -118,7 +118,13 @@ CREATE TRIGGER order_delete AFTER DELETE ON order_details
 delimiter ;
 ```
 1. Авторизация пользователя:
+
 ![scheme](images/authorization.PNG)
+
+При неверном вводеБ показывает ошибку:
+
+![scheme](images/failed.PNG)
+
 
 2. На экране показываются все базы данных:
 ![scheme](images/listOfdb.PNG)
